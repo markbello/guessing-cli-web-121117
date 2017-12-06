@@ -6,8 +6,9 @@ def run_guessing_game
   running = true
   while running
     res = gets.chomp
+    binding.pry
     case res
-      binding.pry
+
       when res == num
         puts "You guessed the correct number!"
         running = false
