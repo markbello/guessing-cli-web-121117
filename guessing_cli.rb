@@ -8,6 +8,7 @@ def run_guessing_game
     case res
       when res == num
         puts "You guessed the correct number!"
+        running = false
       when "exit"
           puts "Goodbye!"
           running = false
