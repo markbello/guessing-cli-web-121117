@@ -12,8 +12,9 @@ def run_guessing_game
         puts "You guessed the correct number!"
         running = false
       when "exit"
-          puts "Goodbye!"
-          running = false
+        puts "Goodbye!"
+        running = false
+      end
     end
   end
 end
