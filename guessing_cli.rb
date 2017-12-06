@@ -9,10 +9,8 @@ def run_guessing_game
     res = gets.chomp
     if res.to_i == num
       puts "You guessed the correct number!"
-      running = false
     elsif res != "exit" && res.to_i != num
       puts "The computer guessed #{num}."
-      running = false
     elsif res == "exit"
       puts "Goodbye!"
       running = false
