@@ -1,4 +1,5 @@
 # Code your solution here!
+require "pry"
 def run_guessing_game
   puts "Guess a number between 1 and 6."
   num = rand(1..6)
@@ -6,6 +7,7 @@ def run_guessing_game
   while running
     res = gets.chomp
     case res
+      binding.pry
       when res == num
         puts "You guessed the correct number!"
         running = false
