@@ -8,14 +8,12 @@ def run_guessing_game
     res = gets.chomp
     binding.pry
     case res
-
       when res == num
         puts "You guessed the correct number!"
         running = false
       when "exit"
         puts "Goodbye!"
         running = false
-      end
     end
   end
 end
