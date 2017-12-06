@@ -14,7 +14,7 @@ def run_guessing_game
     elsif res != "exit" && res != num
       puts "The computer guessed #{num}."
       running = false
-    elsif res = "exit"
+    elsif res == "exit"
       running = false
     end
   end
