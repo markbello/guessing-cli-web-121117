@@ -8,15 +8,14 @@ def run_guessing_game
   while running
     res = gets.chomp
     # binding.pry
-    case res
-    when res == num
-        puts "You guessed the correct number!"
-        running = false
-      when res != "exit" && res != num
-        puts "The computer guessed #{num}."
-        running = false
-      when "exit"
-        running = false
+    if res == num
+      puts "You guessed the correct number!"
+      running = false
+    elsif res != "exit" && res != num
+      puts "The computer guessed #{num}."
+      running = false
+    elsif res = "exit"
+      running = false
     end
   end
   puts "Goodbye!"
